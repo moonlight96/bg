@@ -1,0 +1,252 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#banggo {
+    .header {
+        width: 980px;
+        margin: 0 auto;
+        height: 100px;
+
+        a {
+            display: block;
+            width: 220px;
+            height: 100px;
+            // float: left;
+        }
+    }
+
+    .LI_main {
+        margin-top: 25px;
+
+        .rarea {
+            width: 340px;
+        }
+
+        .seltab {
+            height: 54px;
+            position: relative;
+
+            h3 {
+                top: 4px;
+                color: #666;
+                height: 34px;
+                font-size: 14px;
+                cursor: pointer;
+                line-height: 34px;
+                text-align: center;
+                position: absolute;
+                border: 1px solid #CCC;
+                background-color: #FFF;
+
+            }
+
+            .cstyle {
+                top: 0px;
+                padding-top: 3px;
+                border-top: 2px solid #c00;
+                border-bottom: none;
+            }
+
+            .t1 {
+                width: 108px;
+                left: 0;
+            }
+
+            .t2 {
+                width: 108px;
+                left: 109px;
+            }
+
+            .t3 {
+                width: 120px;
+                left: 218px;
+            }
+        }
+
+        .formbox {
+            height: 278px;
+            span{
+                font-size: 12px;
+                float: right;           
+            }
+        }
+
+        .ltext {
+            width: 80px;
+            color: #666;
+            line-height: 28px;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .input1 {
+            border: 1px solid #CCC;
+            width: 220px;
+            height: 28px;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 5px;
+            margin: 0 10px 0 0;
+        }
+
+        .formarea {
+            width: 338px;
+            border: 1px solid #CCC;
+            border-top: none;
+            padding-top: 1px;
+            margin-top: -1px;
+            padding-top: 30px;
+        }
+
+        .bottom {
+            width: 318px;
+            text-align: center;
+            padding: 15px 0;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid #F1F1F1;
+            overflow: hidden;
+            zoom: 1;
+            font-size: 12px;
+
+            span {
+                line-height: 27px;
+                display: inline-block;
+                margin-right: 5px;
+            }
+
+            .btn_common {
+                width: 96px;
+                height: 27px;
+                display: inline-block;
+                height: 27px;
+                line-height: 27px;
+                padding: 0 0 0 15px;
+                margin: 0;
+                cursor: pointer;
+                color: #404040;
+                background: url(../img/Login/buttons.png) 0px -644px no-repeat;
+
+            }
+        }
+
+        .login_surport {
+            border: 1px solid #efefef;
+            padding: 0;
+            margin-bottom: 10px;
+            width: 300px;
+        
+
+
+        h4 {
+            background: #efefef;
+            margin: 0;
+            line-height: 32px;
+            padding: 0 8px;
+            font-weight: normal;
+            font-size: 12px;
+        }
+            p {
+                margin: 0;
+                overflow: hidden;
+                zoom: 1;
+                font-size: 12px;
+
+                a {
+                    color: #000;
+                    background: #FFF url(../img/Login/icon_login.png) -9999px -9999px no-repeat;
+                    cursor: pointer;
+                    padding: 0;
+                    border: 1px solid #efefef;
+                    margin: -1px;
+                    display: block;
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-indent: 38px;
+
+                }
+
+                .icon_qq {
+                    background-position: 7px -6px;
+                }
+
+                .icon_alipay {
+                    background-position: 7px -56px;
+                }
+
+                .icon_weixin {
+                    background-position: 7px -101px;
+                }
+            }
+        
+        }
+    }
+
+    .item {
+        width: 338px;
+        height: 60px;
+    }
+
+    .Lmt5 {
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .Lmt10 {
+        margin-top: 10px;
+        height: 34px;
+    }
+
+    .btn_login {
+        background-position: 0 0;
+        display: inline-block;
+        width: 104px;
+        height: 34px;
+        line-height: 34px;
+        cursor: pointer;
+        background: url(../img/Login/buttons.png) no-repeat;
+    }
+
+    .retrieve {
+        color: #333;
+        line-height: 30px;
+        text-decoration: underline;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    #mySpan {
+        a {
+            font-size: 12px;
+        }
+    }
+
+    .Lfll {
+        float: left;
+    }
+
+    .Lovh {
+        overflow: hidden;
+    }
+
+    .Cwrap {
+        width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .LI_bottom {
+        width: 980px;
+        clear: both;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        font-size: 12px;
+        a{
+            color: #333;
+        }
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <div id="banggo">
+        <div class="header_top_line">
+            <div class="content">
+                <span class="header_top_line_left">
+                </span>
+                <ul class="header_top_line_right">
+                    <li class="loginBtn">
+                        <a >登录</a>
+                        <em></em>
+                        <div class="mbshop_new_headtop_box">
+                            <a href="https://bgact.banggo.com/Unionlogin/Authorize?from=qq">QQ账户登录</a>
+                            <a href="https://bgact.banggo.com/Unionlogin/Authorize?from=alipay">支付宝登录</a>
+                            <a href="https://m.banggo.com/Api/wxLogin">微信账户登录</a>
+                        </div>
+                    </li>
+                    <li class="regBtn"><a href="html/reg.html">注册</a></li>
+                    <li><a href="#">我的邦购</a>
+                        <i></i>
+                        <em></em>
+                        <div class="mbshop_new_headtop_box mbshop_box2">
+                            <a href="https://user.banggo.com/member/Order">我的订单</a>
+                            <a href="https://user.banggo.com/member/Point">我的积分</a>
+                            <a href="https://user.banggo.com/member/Collect">我的点赞</a>
+                            <a href="https://user.banggo.com/member/Address">收货地址</a>
+                        </div>
+                    </li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><b></b> <a href="#">下载APP</a>
+                        <i></i>
+                        <em></em>
+                        <div class="mbshop_new_headtop_box mbshop_new_headtop_con_style_02">
+                            <img alt="扫描邦购手机二维码" src="../img/Shouye/mbshop_pic_mobile.png" width="140" height="140" />
+                        </div>
+                    </li>
+                    <li><a href="#">微博</a> <a href="#">微信</a>
+                        <div class="new_mbshop_wxewm_box">
+                            <img src="../img/Shouye/mbshop_pic_erweima.jpg" width="140" height="140" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mbshop_new_headtop"></div>
+        <div class="mbshop_flowHead">
+            <div class="mbshop_flowHeadContent">
+                <span class="mbshop_orderFlowstep1"></span>
+            </div>
+        </div>
+        <div class="mbshop_cart_1127_tab_up">购物袋
+        </div>
+        <!-- 全选行 -->
+        <div name="tag" id="cartTop">
+            <ol name="tag" class="mbshop_cart_1127_tab">
+                <li class="mbshop_cart_1127_01">
+                    <label class="mbshop_checkbox">
+                        <input name="checkAll" class="checkAllBtn checkAllBtn2" storetype="" checked="true"
+                            type="checkbox">
+                        <!-- <i class="iconfont iconfontselect"></i> -->
+                        <b>全选</b>
+                    </label>
+                </li>
+                <li class="mbshop_cart_1127_02">商品信息</li>
+                <li class="mbshop_cart_1127_03">颜色尺码</li>
+                <li class="mbshop_cart_1127_04">单价(元)</li>
+                <li class="mbshop_cart_1127_05">数量</li>
+                <li class="mbshop_cart_1127_07">小计</li>
+                <li class="mbshop_cart_1127_09">操作</li>
+            </ol>
+        </div>
+        <div class="mbshop_cart_1127_warp_box">
+            <p class="mbshop_top_tips"> 购物车中有
+                <span class="strong">3件商品已降价</span>
+                <a href="javascript:;">点击查看</a>
+                <b>X</b>
+            </p>
+            <div class="mbshopAll">
+                <div class="banggo_cart_tab">
+                    <label class="mbshop_checkbox">
+                        <input name="checkAll" class="checkBb" storetype="HQ01S116" type="checkbox" checked="true">
+                        <i class="iconfont iconfontselect"></i>
+                        <b>邦购</b>
+                    </label>
+                    <em id="ad_cart_text_ad">满99包邮</em>
+                </div>
+                <div class="mbshop_cart_1127_single_warp_box"> </div>
+                <div class="mbshop_cart_1127_single_warp_box">
+                    <!-- 赠品，优惠等标签所在盒子 -->
+                    <div class="mbshop_cart_1127_single_label">
+                        <div class="mbshop_cart_1127_single_label_00">
+                            <!-- 标签 红底的 --> <span class="mbshop_cart_1127_single_label_01"> 多买优惠 </span> </div>
+                        <!-- 标签说明 可多行设置，重复 p 即可-->
+                        <div class="mbshop_cart_1127_single_label_ex">
+                            <p> <i><a href="###">已满2件,已享6.0折优惠</a></i>
+                            </p>
+                        </div>
+                    </div> <!-- 此处，一个 UL 盒子，是一个商品 -->
+                    
+                    
+                </div>
+            </div>
+            <div class="go_to_balance_warp" style="width:1200px; height:61px; margin-top:30px;">
+                <div class="go_to_balance" style="position: inherit;">
+                    <div class="go_to_balance_left"> <label class="mbshop_checkbox"> <input name="checkAll"
+                                class="checkAllBtn checkAllBtn1" storetype="" type="checkbox" checked="true"> <i
+                                class="iconfont iconfontselect"></i> <b>全选</b>
+                        </label>
+                        <p id="deleteCheckbox" class="go_to_balance_left_del">删除选中商品</p>
+                        <p id="cleanError" class="go_to_balance_left_clean">清除失效商品</p>
+                        <p class="go_to_balance_left_total">合计(不含运费)：<i>￥136.62</i></p>
+                        <p class="go_to_balance_left_alg">商品总价<i>￥227.7</i> - 优惠<em>￥91.08</em></p>
+                        <p class="go_to_balance_left_have">已选商品<em>3</em>件</p>
+                    </div> <a href="javascript:void(0);"
+                        class="go_to_balance_right mbshop_cartPayBill go_to_balance_right_on">去结算</a>
+                </div>
+            </div>
+        </div>
+        <div class="mbshop_cartTabCon">
+            <!--tab-->
+            <div class="mbshop_cartTabList">
+                <ul>
+                    <li id="newslook" class="mbshop_cartTabOn">最近浏览的商品</li>
+                </ul>
+            </div>
+            <!--box-->
+            <div class="mbshop_cartTabBox">
+                <!--购买了相同产品的顾客还购买了-->
+                <!--买了又买-->
+                <div class="mbshop_cartTabBoxCon" id="bought-Ctn" style="display: none;">
+                    <div id="mbshop_cartRecArea0" class="mbshop_cartRecArea">
+                        <span class="mbshop_cartRecBtn_fl" title="向左"></span>
+                        <div class="mbshop_cartRecAreaList">
+                            <div class="mbshop_cartRecAreaCon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="mbshop_cartRecBtn_fr" title="向右"></span>
+                    </div>
+                </div>
+                <!--最近浏览-->
+                <div class="mbshop_cartTabBoxCon" id="goods-Ctn">
+                    <div id="mbshop_cartRecArea1" class="mbshop_cartRecArea">
+                        <span class="mbshop_cartRecBtn_fl" title="向左"></span>
+                        <div class="mbshop_cartRecAreaList">
+                            <div class="mbshop_cartRecAreaCon">
+                                <!-- 购物袋页面历史 -->
+                                <ul>
+                                    <!--循环开始-->
+                                    <li class="mbshop_cartListPdCon">
+                                        <a href="https://www.banggo.com/goods/661799.shtml"
+                                            class="mbshop_cartListPdImg">
+                                            <img id="mainPic661799" src="" alt="" style="display: block">
+                                        </a>
+                                        <p class="mbshop_cartListPdText">【夏季新品】男纯棉条纹短袖T恤衫</p>
+                                        <p class="mbshop_cartListPdText">
+                                            <b>￥69.90</b>
+                                            <i>￥159.00</i>
+                                            <a href="javascript:void(0);" class="veo_to_shop mbshop_cartAddItem"
+                                                quickaddcartid="661799">加入购物袋</a>
+                                        </p>
+                                    </li>
+                                    <!--循环结束-->
+                                </ul>
+
+                            </div>
+                        </div>
+                        <span class="mbshop_cartRecBtn_fr" title="向右"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mbshop_openpop_mask"></div>
+        <!-- 加入购物车跳出弹窗 -->
+        <div class="mbshop_openpop mbshop_addCartSuccess" style="left: 50%; margin-left: -350px; top: 266.5px;">
+            <!-- title -->
+            <div class="mbshop_openpop_title">
+                <span>提示</span>
+                <a class="mbshop_openpop_close" href="javascript:;" title="关闭"></a>
+            </div>
+            <!-- addSuccessFrame -->
+            <div class="mbshop_openpop_con">
+                <!-- buy -->
+                <div class="mbshop_openpop_buyArea">
+                    <span class="mbshop_openpop_addSuccess">确定要删除商品吗？</span>
+                    <span class="mbshop_openpop_btnArea">
+                        <a class="mbshop_openpop_btnGoPay" target="_blank" href="../html/cart.html">确定</a>
+                        <a class="mbshop_openpop_btnGoShop" href="javascript:;">取消</a>
+
+                    </span>
+
+                </div>
+                <div class="mbshop_openpop_productRecommend">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/common.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/cart.js"></script>
+
+</html>

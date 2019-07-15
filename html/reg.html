@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reg.css">
+    <style>
+        #banggo .header {
+            width: 980px;
+            margin: 0 auto;
+            height: 100px;
+        }
+
+        #banggo .header a {
+            display: block;
+            width: 220px;
+            height: 100px;
+        }
+
+        #banggo .LI_bottom {
+            width: 980px;
+            clear: both;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 20px;
+            font-size: 12px;
+        }
+
+        #banggo .LI_bottom a {
+            color: #333;
+        }
+
+        /*密码强度*/
+        .pw-strength {
+            clear: both;
+            position: relative;
+            top: 8px;
+            width: 180px;
+        }
+
+        .pw-bar {
+            background: url(../css/pwd-1.png) no-repeat;
+            height: 14px;
+            overflow: hidden;
+            width: 179px;
+        }
+
+        .pw-bar-on {
+            background: url(../css/pwd-2.png) no-repeat;
+            width: 0px;
+            height: 14px;
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            transition: width .5s ease-in;
+            -moz-transition: width .5s ease-in;
+            -webkit-transition: width .5s ease-in;
+            -o-transition: width .5s ease-in;
+        }
+
+        .pw-weak .pw-defule {
+            width: 0px;
+        }
+
+        .pw-weak .pw-bar-on {
+            width: 60px;
+        }
+
+        .pw-medium .pw-bar-on {
+            width: 120px;
+        }
+
+        .pw-strong .pw-bar-on {
+            width: 179px;
+        }
+
+        .pw-txt {
+            padding-top: 2px;
+            width: 180px;
+            overflow: hidden;
+        }
+
+        .pw-txt span {
+            color: #707070;
+            float: left;
+            font-size: 12px;
+            text-align: center;
+            width: 58px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+
+    <div id="banggo">
+        <div class="header">
+            <a href="##">
+                <img src="../img/Login/logo.jpg" alt="">
+            </a>
+        </div>
+        <!-- 中间表格 -->
+        <div class="Lovh Lpb30">
+            <div class="RG_type Lmt10 Cwrap">
+                <div class="Cwrap Lovh" id="changetab">
+                    <!-- 
+                    <a id="normal" class="cstyle">普通注册</a>  -->
+                    <a id="mobile" class="cstyle">手机注册</a>
+                </div>
+            </div>
+            <div class="RG_mbox Cwrap Lmt10 Lovh" id="form_div">
+
+                <!--普通注册步骤一结束-->
+
+
+                <!--手机注册步骤一开始-->
+                <div class="RG_sbox1 Lfll Lpt20 Lovh" id="mobile_div">
+                    <div class="RG_title">第一步：填写手机账户信息（以下内容均为必填）<input type="hidden" id="submitType" value="1"></div>
+                    <form name="mobile_form" id="mobile_form" method="post" action="">
+                        <input type="hidden" name="service"
+                            value="http://bgact.banggo.com/login?r_url=http://www.banggo.com/">
+                        <input type="hidden" name="sourceCode" value="">
+                        <input type="hidden" name="little" value="6ca44f8b8e6b3ddc60a36236ef3063fd">
+                        <input type="hidden" id="vKey" name="vKey" value="JLKH">
+                        <input type="hidden" id="vValue" name="vValue" value="BSS7">
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">用户名：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="mobileusername" name="uid" value="" class="input1 Lfll">
+                                <span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+                                <p id="mobile_user_message" class="errorinfo Lcfl">
+                                    <font color="red">用户名不能为空</font>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">手机号码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="mobileNumber" name="mobile" value="" class="input1 Lfll">
+                                <span class="tips">请输入您的手机号码。</span>
+                                <p id="mobileNumber_message" class="errorinfo Lcfl">
+                                    <font color="red">手机号码不能为空</font>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">验证码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" maxlength="4" name="codeNumber" class="input2 Lfll" id="img2Code">
+                                <span id="mySpan2">
+                                    <div id="img2" class="change_img"></div>
+                                    <!-- <img align="middle" id="img2" class="change_img" src="">  -->
+                                    <a href="###" id="cliBtn" style="font-size: 12px; color: #333">换一张</a>
+                                </span>
+                                <br>
+                                <p id="img2_message" class="errorinfo Lcfl">验证码不能为空</p>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">&nbsp;</div>
+                            <a class="btn btn_sendmessage  Lfll Lmr20" id="">
+                                <span></span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <!--手机注册步骤一结束-->
+
+                <!--手机注册步骤二开始-->
+                <div class="RG_sbox1 Lfll Lpt20 Lovh" id="mobile2_div" style="display: none">
+                    <div class="RG_title">第二步：填写获得的激活码</div>
+                    <form name="mobile2_form" id="mobile2_form" method="post" action="/CASServer/custom/registry.do">
+                        <input type="hidden" name="service"
+                            value="http://bgact.banggo.com/login?r_url=http://www.banggo.com/">
+                        <input type="hidden" name="codeNumber" value="">
+                        <input type="hidden" name="sourceCode" value="">
+                        <input type="hidden" name="little" value="6ca44f8b8e6b3ddc60a36236ef3063fd">
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">用户名：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" class="input1 Lfll" id="user_id" name="uid" value="">
+                                <span class="errorinfo Lcfl .span1">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">手机号码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" class="input1 Lfll" id="mobile2" name="mobile" value="">
+                                <span class="tips Lfll Ldn">&nbsp;</span>
+                                <span class="errorinfo Lcfl .span2">&nbsp;</span>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">登录密码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="password" class="input1 Lfll" name="pwd" value="" id="pwd_mobile2_form">
+                                <span class="tips span3">6-16个字符，请使用字母加数字或符号的组合密码。</span>
+                                <span id="message_mobile2_form" class="errorinfo Lcfl ">&nbsp;3333</span>
+                                <div id="level" class="pw-strength  pw-defule">
+                                    <div class="pw-bar"></div>
+                                    <div class="pw-bar-on"></div>
+                                    <div class="pw-txt">
+                                        <span>弱</span>
+                                        <span>中</span>
+                                        <span>强</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">确认密码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="password" class="input1 Lfll" name="rpassword" id="rpwd_mobile2_form"
+                                    value="">
+                                <span class="tips span4">请再次输入登录密码。</span>
+                                <span id="rmessage_mobile2_form" class="errorinfo Lcfl "></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">激活码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" class="input1 Lfll" name="mobile_code" id="activeCode" value="">
+                                <span class="tips1 span5">请输入您的激活码。</span>
+                                <span id="activeCode_messsage" class="errorinfo Lcfl ">&nbsp;5</span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">邀请人手机号码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" class="input1 Lfll" name="userInfo.invitationMobile"
+                                    id="invitationMobile" value="">
+                                <span class="tips1">请输入邀请人账号绑定的手机号码。</span>
+                                <span id="invitationMobile_messsage" class="errorinfo Lcfl .span6">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">&nbsp;</div>
+                            <a class="btn btn_acceptAndRegister Lfll">
+                                <span>同意以下协议并注册</span>
+                            </a>
+                            <div class="postphonecode">
+                                <span id="notRecieve">手机未收到验证码，</span> <a class="rsendCode">重新发送</a>&nbsp;&nbsp;
+                                <span id="firstClickMessage" class="errorinfo Lcfl" style="color: red"></span>
+                                <span id="errorMessage" class="errorinfo Lcfl" style="color: red"></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ltext Lfll">&nbsp;</div>
+                            <div class="Lfll">
+                                <a href="https://www.banggo.com/article_58.shtml" target="_blank"
+                                    class="useragreement">《邦购用户协议》</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--手机注册步骤二结束-->
+
+                <div class="RG_sbox1 Lfll Lpt20 Lovh" id="card_div" style="display: none">
+                    <div class="RG_title">第一步：填写MVP卡账户信息（以下内容均为必填）</div>
+                    <form name="card_form" id="card_form" method="post" action="/CASServer/custom/doCardActive.do">
+                        <div class="item Lovh Lmt20">
+                            <input type="hidden" name="service"
+                                value="http://bgact.banggo.com/login?r_url=http://www.banggo.com/">
+                            <div class="ltext Lfll">MVP卡号：</div>
+                            <div class="Lfll">
+                                <input type="hidden" name="service"
+                                    value="http://bgact.banggo.com/login?r_url=http://www.banggo.com/">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" class="input1 Lfll" name="mvpCard.mvpNo" value="" id="mvpCard"> <span
+                                    class="tips1">请输入MVP卡卡号，卡号由13为数字组成。</span> <span id="card_message"
+                                    class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">mvp卡密码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="mvpPwd" name="mvpCard.mvpPwd" type="password" class="input1 Lfll"> <span
+                                    class="tips1">请输入MVP卡密码。</span> <span id="pwd_card_message"
+                                    class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">用户名：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="uName" type="text" class="input1 Lfll" name="uid" value=""> <span
+                                    class="tips1">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+                                <span id="user_card_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">登录密码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="password" class="input1 Lfll" name="pwd" id="password_card_form"> <span
+                                    class="tips1">6-16个字符，请使用字母加数字或符号的组合密码。</span>
+                                <span id="password_card_message" class="errorinfo Lcfl"></span>
+                            </div>
+
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">确认密码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="password" class="input1 Lfll" name="newpwd" id="rpassword_card_form"> <span
+                                    class="tips1">请再次输入登录密码。</span>
+                                <span id="rpassword_card_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">邮箱：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" class="input1 Lfll" name="email" id="email_card_form" value=""> <span
+                                    class="tips1">请输入您的邮箱。</span> <span id="email_card_message"
+                                    class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">验证码：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" maxlength="4" name="codeNumber" class="input2 Lfll" id="img3Code">
+                                <span id="mySpan3">
+                                    <img align="middle" id="img3" class="change_img" src=""> <a
+                                        onclick="changeImg('img3')">换一张</a>
+                                </span> <br> <span id="img3_message" class="errorinfo Lcfl">
+                                    <font color="red"></font>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">&nbsp;</div>
+
+                            <a class="btn btn_acceptAndRegister Lfll"><span>同意以下协议并注册</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="item">
+
+                                <div class="ltext Lfll">&nbsp;</div>
+
+                                <div class="Lfll">
+
+                                    <a href="https://www.banggo.com/article_58.shtml" target="_blank"
+                                        class="useragreement">《邦购用户协议》</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--消费卡注册步骤一结束-->
+
+                <!--线下实体卡/微会员注册步骤一开始-->
+                <div class="RG_sbox1 Lfll Lpt20 Lovh" id="offline_card_div" style="display: none">
+                    <div class="RG_title">第一步：填写线下实体卡/微会员信息（以下内容均为必填）</div>
+                    <form name="offline_card_form" id="offline_card_form" method="post"
+                        action="/CASServer/custom/doOfflineCardActive.do">
+                        <div class="item Lovh Lmt20">
+                            <input type="hidden" name="service"
+                                value="http://bgact.banggo.com/login?r_url=http://www.banggo.com/">
+                            <div class="ltext Lfll">卡号：</div>
+                            <div class="Lfll">
+                                <input type="hidden" name="service"
+                                    value="http://bgact.banggo.com/login?r_url=http://www.banggo.com/">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" class="input1 Lfll" name="cid" value="" id="cid"> <span
+                                    class="tips1">请输入实体卡/微会员卡号</span>
+                                <span id="offline_card_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">卡密：</div>
+                            <div class="Lfll">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="cid_pwd" name="cid_pwd" type="password" class="input1 Lfll"> <span
+                                    class="tips1">请输入实体卡/微会员卡密码。</span>
+                                <span id="offline_card_pwd_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">用户名：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="offline_card_username" name="uid" value="" class="input1 Lfll"> <span
+                                    class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+                                <span id="offline_card_user_message" class="errorinfo Lcfl">&nbsp;</span>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">登录密码：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="password_offline_card" name="pwd" class="input1 Lfll" value=""
+                                    type="password"> <span class="tips">6-16个字符，请使用字母加数字或符号的组合密码。</span>
+                                <span id="password_offline_card_message" class="errorinfo Lcfl">&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">确认密码：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="rpassword_offline_card" name="repwdString" class="input1 Lfll" value=""
+                                    type="password"> <span class="tips1">请再次输入登录密码。</span> <span
+                                    id="rpassword_offline_card_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">邮箱：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input id="email_offline_card" type="text" class="input1 Lfll" name="email" value="">
+                                <span class="tips1">请输入您的邮箱。</span>
+                                <span id="email_offline_card_message" class="errorinfo Lcfl"></span>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh">
+                            <div class="ltext Lfll">验证码：</div>
+                            <div class="Lfll" style="width: 580px;">
+                                <div class="inputlbd Lfll">&nbsp;</div>
+                                <input type="text" maxlength="4" name="codeNumber" class="input2 Lfll" id="img4Code">
+                                <span id="mySpan">
+                                    <img align="middle" id="img4" class="change_img"
+                                        src="https://passport.banggo.com:443/CASServer//custom/loginCode.do"> <a
+                                        onclick="changeImg('img4')">换一张</a>
+                                </span> <br> <span id="img4_message" class="errorinfo Lcfl">
+                                    <font color="red"></font>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="item Lovh Lmt15">
+                            <div class="ltext Lfll">&nbsp;</div>
+                            <a class="btn btn_acceptAndRegister Lfll"><span>同意以下协议并注册</span>
+                            </a>
+                        </div>
+                        <div class="item">
+
+                            <div class="ltext Lfll">&nbsp;</div>
+
+                            <div class="Lfll">
+
+                                <a href="https://www.banggo.com/article_58.shtml" target="_blank"
+                                    class="useragreement">《邦购用户协议》</a>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <!--线下实体卡/微会员注册步骤一结束-->
+
+                <!--注册页面公用，右侧内容开始-->
+                <div class="rarea Lfll">
+                    <div class="RG_rightinfo Lovh Lti1000r">
+                        <h3>邦购网欢迎您</h3>
+                        <p>
+                            欢迎注册成为邦购网会员，在这里您可以享受最贴心快捷的购物服务，我们的宗旨是让每一位顾客都得到最大满意~~~美特斯邦威，不走寻常路!^_^
+                        </p>
+                    </div>
+                </div>
+                <!--注册页面公用，右侧内容结束-->
+            </div>
+            <!--注册页面结束-->
+            <script src="../js/jquery-1.10.1.min.js"></script>
+            <script src="../js/verifyCode.js"></script>
+            <script type="text/javascript">
+                (function () {
+                    //注册方式tab切换
+                    $("#changetab a").each(function (i) {
+                        $(this).click(function () {
+                            changeImg('img' + (i + 2));
+                            $(this).siblings().removeClass();
+                            $(this).addClass('cstyle');
+                            var id = $(this).attr('id');
+                            var current_div = $("#" + id + "_div");
+                            $(current_div).siblings(".RG_sbox1,.RG_sbox2").hide();
+                            $(current_div).fadeIn(300);
+                            $("#submitType").val(i + 1);
+                        });
+                    });
+                })();
+            </script>
+        </div>
+        <!-- 底部 -->
+        <div class="LI_bottom">
+            美特斯邦威集团网站：
+            <a href="http://www.metersbonwe.com/">美特斯邦威</a> |
+            <a href="http://www.me-city.com/">ME&CITY</a> |
+            <a href="http://www.chincn.com/">CH'IN祺</a> |
+            <!-- <a href="http://www.myfstv.com/">时尚秘书</a> | -->
+            <a href="https://www.banggo.com">邦购网</a>
+        </div>
+    </div>
+</body>
+<script src="../js/common.js"></script>
+<script src="../js/reg.js"></script>
+<script src="../js/pwdHard.js"></script>
+
+</html>

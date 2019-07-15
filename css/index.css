@@ -1,0 +1,618 @@
+@import url(common.css);
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: auto;
+}
+
+.content {
+  width: 1200px;
+  margin: auto;
+}
+
+#banggo {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+#banggo .ad_common_picture {
+  background: #440c0b;
+  width: 100%;
+}
+#banggo .ad_common_picture .ad_common_picture img {
+  width: 100%;
+  height: 80px;
+}
+#banggo .header_top_line {
+  width: 100%;
+  height: 32px;
+  font-size: 12px;
+  color: #999;
+}
+#banggo .header_top_line .header_top_line_left {
+  float: left;
+  line-height: 32px;
+  width: 640.16px;
+}
+#banggo .header_top_line .header_top_line_right {
+  float: right;
+  width: 450.14px;
+  height: 30px;
+}
+#banggo .header_top_line .header_top_line_right li {
+  float: left;
+  width: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+#banggo .header_top_line .header_top_line_right li a {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 2px;
+}
+#banggo .header_top_line .header_top_line_right li em {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: 5px;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+}
+#banggo .header_top_line .header_top_line_right li .mbshop_new_headtop_box {
+  display: none;
+  position: absolute;
+  width: 80px;
+  height: auto;
+  border: 1px solid #B5B5B5;
+  background-color: #fff;
+  top: 30px;
+  -moz-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  left: -1px;
+  z-index: 19;
+}
+#banggo .header_top_line .header_top_line_right li .mbshop_new_headtop_box a {
+  float: left;
+  display: block;
+  width: auto;
+  clear: left;
+  margin-top: 5px;
+}
+#banggo .header_top_line .header_top_line_right li .mbshop_new_headtop_con_style_02 {
+  width: 140px;
+  padding: 5px 10px 10px;
+}
+#banggo .header_top_line .header_top_line_right li .mbshop_box2 {
+  width: 100%;
+}
+#banggo .header_top_line .header_top_line_right li .new_mbshop_wxewm_box {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  z-index: 111;
+  display: none;
+  top: 25px;
+  left: -12px;
+}
+#banggo .header_top_line .header_top_line_right li > i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../css/img/Shouye/icons.png);
+  background-position: 15px -139px;
+}
+#banggo .header_top_line .header_top_line_right li b {
+  display: inline-block;
+  width: 9px;
+  height: 15px;
+  background: url(../css/img/Shouye/Iphone-vertical.png);
+  background-size: contain;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(1):hover {
+  border-left: 1px #B5B5B5 solid;
+  border-right: 1px #B5B5B5 solid;
+  background-position: 63px -35px;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(1):hover .mbshop_new_headtop_box {
+  display: block;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(3):hover {
+  border-left: 1px #B5B5B5 solid;
+  border-right: 1px #B5B5B5 solid;
+  background-position: 63px -35px;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(3):hover em {
+  bottom: 7px;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(3):hover .mbshop_new_headtop_box {
+  display: block;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(5):hover {
+  border-left: 1px #B5B5B5 solid;
+  border-right: 1px #B5B5B5 solid;
+  background-position: 63px -35px;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(5):hover em {
+  bottom: 7px;
+}
+#banggo .header_top_line .header_top_line_right li:nth-child(5):hover .mbshop_new_headtop_box {
+  display: block;
+}
+#banggo .header_top_line .header_top_line_right li:last-child:hover .new_mbshop_wxewm_box {
+  display: block;
+}
+#banggo .header_top_content {
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+}
+#banggo .header_top_content img {
+  float: left;
+}
+#banggo .header_top_content .header_top_content_center {
+  width: 850px;
+  height: 53px;
+  float: left;
+  line-height: 65px;
+}
+#banggo .header_top_content .header_top_content_center .inpText {
+  float: left;
+  width: 290px;
+  height: 32px;
+  line-height: 65px;
+  border: 1px #d51819 solid;
+  padding: 5px 0 5px 5px;
+  box-sizing: border-box;
+  margin-top: 19px;
+  outline: none;
+}
+#banggo .header_top_content .header_top_content_center .inpSearch {
+  float: left;
+  width: 80px;
+  height: 32px;
+  background: #d51819;
+  color: #fff;
+  margin-right: 8px;
+  border: none;
+  margin-top: 19px;
+}
+#banggo .header_top_content .header_top_content_center .headTopContent_ul {
+  float: left;
+  width: 350px;
+  margin-left: 10px;
+  height: 15px;
+  line-height: 65px;
+  font-size: 12px;
+}
+#banggo .header_top_content .header_top_content_center .headTopContent_ul a:nth-child(3),
+#banggo .header_top_content .header_top_content_center .headTopContent_ul :nth-child(5),
+#banggo .header_top_content .header_top_content_center .headTopContent_ul :nth-child(9) {
+  color: #d51819;
+}
+#banggo .header_top_content .header_top_content_center .headTopContent_ul a {
+  float: left;
+  color: #666;
+}
+#banggo .header_top_content .header_top_content_center .headTopContent_ul span {
+  float: left;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0 10px;
+  color: #DCDCDC;
+}
+#banggo .header_top_content .header_top_content_center span {
+  line-height: 65px;
+  font-size: 14px;
+  width: 102px;
+}
+#banggo .header_top_content .header_top_content_center span i {
+  display: inline-block;
+  width: 33px;
+  height: 46px;
+  background: url(../css/img/Shouye/Veo_mbshop_spirit_pic.png);
+  background-position: 0 -412px;
+}
+#banggo .header_top_content .header_top_content_center span b {
+  color: #d51819;
+}
+#banggo .header_top_classify {
+  width: 100%;
+  height: 38px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 0 0px;
+}
+#banggo .header_top_classify .headClassify_ul1 {
+  padding: 0 17px 0 0;
+  box-sizing: border-box;
+}
+#banggo .header_top_classify .headClassify_ul1 li {
+  float: left;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+#banggo .header_top_classify .headClassify_ul1 li > a {
+  color: #000;
+}
+#banggo .header_top_classify .headClassify_ul1 li .category_hover_wrap {
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  padding: 30px 0 30px;
+  display: none;
+  min-height: 360px;
+  box-sizing: border-box;
+  margin-left: -18px;
+  margin-top: -2px;
+  box-shadow: 0 0 5px #ccc;
+  overflow: hidden;
+}
+#banggo .header_top_classify .headClassify_ul1 li .category_hover_wrap .category_column {
+  float: left;
+  width: 110px;
+  min-height: 300px;
+  padding: 0 25px 600px;
+  margin-bottom: -600px;
+  box-sizing: border-box;
+  border-right: 1px solid #f0f0f0;
+}
+#banggo .header_top_classify .headClassify_ul1 li .category_hover_wrap .category_column a {
+  display: block;
+  font-size: 12px;
+  color: #222;
+  white-space: nowrap;
+}
+#banggo .header_top_classify .headClassify_ul1 li .category_hover_wrap .category_column dt {
+  margin-bottom: 20px;
+  float: none;
+  text-align: center;
+  margin-left: -25px;
+  width: 110px;
+}
+#banggo .header_top_classify .headClassify_ul1 li .category_hover_wrap .category_column dt a {
+  font-size: 20px;
+  color: #d22223;
+}
+#banggo .header_top_classify .headClassify_ul2 {
+  float: right;
+}
+#banggo .header_top_classify .headClassify_ul2 li {
+  height: 30px;
+  float: left;
+  padding: 0 18px;
+}
+#banggo .header_top_classify .headClassify_ul2 li img {
+  width: 134px;
+  height: 40px;
+  margin-top: -10px;
+}
+#banggo .banner {
+  width: 100%;
+  height: 750px;
+}
+#banggo .banner .banner_top {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+#banggo .banner .banner_top img {
+  width: 1588px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#banggo .banner .banner_top:hover {
+  cursor: pointer;
+}
+#banggo .banner .banner_bottom {
+  height: 150px;
+}
+#banggo .banner .banner_bottom li {
+  width: 219px !important;
+  height: 110px;
+  float: left;
+  margin: 20px 0;
+  padding: 0 10px;
+  border-right: 1px solid #f0f0f0;
+  position: relative;
+}
+#banggo .banner .banner_bottom li img {
+  width: 220px;
+  height: 110px;
+}
+#banggo .banner .banner_bottom li:hover {
+  cursor: pointer;
+}
+#banggo .banner .banner_bottom .active::before {
+  content: "";
+  bottom: -20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  border-bottom: 3px solid #d22223;
+  width: 100px;
+}
+#banggo .banner .banner_bottom .active::after {
+  opacity: 0;
+}
+#banggo .banner .banner_bottom li::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  top: 0;
+  left: 10px;
+}
+#banggo .IN_plate {
+  width: 100%;
+  background-color: #f7f7f7;
+  height: 4880px;
+}
+#banggo .IN_plate .plate1 {
+  width: 100%;
+  height: 332px;
+}
+#banggo .IN_plate .plate1 a {
+  float: left;
+}
+#banggo .IN_plate .plate2 {
+  width: 100%;
+  height: 615px;
+}
+#banggo .IN_plate .plate2 a {
+  float: left;
+}
+#banggo .IN_plate .plate, #banggo .IN_plate .plate3, #banggo .IN_plate .plate4, #banggo .IN_plate .plate5_nz, #banggo .IN_plate .plate6, #banggo .IN_plate .plate7 {
+  height: 792px;
+  width: 100%;
+}
+#banggo .IN_plate .plate .img_plat3top, #banggo .IN_plate .plate3 .img_plat3top, #banggo .IN_plate .plate4 .img_plat3top, #banggo .IN_plate .plate5_nz .img_plat3top, #banggo .IN_plate .plate6 .img_plat3top, #banggo .IN_plate .plate7 .img_plat3top {
+  width: 100%;
+  height: 92px;
+}
+#banggo .IN_plate .a_plate3 {
+  float: left;
+}
+#banggo .IN_plate .a_plate3 a {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#banggo .IN_plate .a_plate3 a img {
+  width: 230px;
+  height: 230px;
+  opacity: 1;
+}
+#banggo .IN_plate .a_plate3 a .img_plat3 {
+  width: 230px;
+  height: 61.23px;
+  position: absolute;
+  left: 0;
+  top: 170px;
+}
+#banggo .IN_plate .a_plate3 a span {
+  position: absolute;
+  right: 15px;
+  top: 211px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+#banggo .IN_plate .a_plate3 a .brand {
+  background: #fff;
+  font-style: normal;
+  width: 230px;
+  display: block;
+  font-size: 14px;
+  color: #919191;
+  line-height: 42px;
+}
+#banggo .IN_plate .a_plate3 a .brand label {
+  margin-left: 70px;
+  vertical-align: middle;
+  width: 40px;
+  height: 18px;
+  border: 1px solid #f8584f;
+  text-align: center;
+  color: #f8584f;
+  background: #fdedec;
+}
+#banggo .IN_plate .a_plate3 a .plate3_tittle {
+  background: #fff;
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  color: #222;
+  width: 230px;
+  height: 16px;
+  overflow: hidden;
+}
+#banggo .IN_plate .a_plate3 a .plate3_price {
+  background: #fff;
+  height: 45px;
+  width: 230px;
+  display: block;
+  line-height: 45px;
+}
+#banggo .IN_plate .a_plate3 a .plate3_price b {
+  font-size: 14px;
+  color: #f8584f;
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 800;
+  font-style: normal;
+}
+#banggo .IN_plate .a_plate3 a .plate3_price del {
+  margin-left: 10px;
+  font-style: normal;
+  font-size: 12px;
+  color: #919191;
+}
+#banggo .IN_plate .imgRight {
+  float: right;
+}
+#banggo .IN_plate .plate4_top img {
+  float: left;
+}
+#banggo .IN_plate .plate4_bottom img {
+  float: left;
+}
+#banggo .IN_plate .plate5_img {
+  margin-bottom: 20px;
+}
+#banggo .IN_plate a img:hover {
+  opacity: 0.65;
+}
+#banggo .plateImg:hover {
+  opacity: 0.65;
+}
+#banggo .adbottom_common {
+  height: 293px;
+}
+#banggo .adbottom_common .ad_common_share {
+  width: 1200px;
+  height: 240px;
+  margin: 53px auto 0;
+  position: relative;
+  float: none;
+  clear: both;
+}
+#banggo .adbottom_common .ad_common_share > li {
+  float: left;
+  height: 238px;
+  border: 1px solid #dcdcdc;
+  margin-right: -1px;
+  background-color: #fafafa;
+}
+#banggo .adbottom_common .ad_common_share > li .ad_right {
+  display: flex;
+}
+#banggo .adbottom_common .ad_common_share > li .ad_right li {
+  background-image: url(../css/img/Shouye/indexline.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  flex: 1;
+  text-align: center;
+}
+#banggo .adbottom_common .ad_common_share > li .ad_right li img {
+  margin: 14px auto 8px;
+}
+#banggo .adbottom_common .ad_common_share > li .ad_right li p {
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+  font-style: normal;
+}
+#banggo .adbottom_common .ad_common_share > li .ad_right li:nth-child(3) {
+  background-image: none;
+}
+#banggo .bottom {
+  background: url(../css/img/Shouye/mbshop_bottom_guide.png) repeat-x;
+  width: 100%;
+}
+#banggo .bottom .mbshop_bottom_guide {
+  margin: 0 auto;
+}
+#banggo .bottom .mbshop_bottom_guide dl {
+  width: 200px;
+  height: auto;
+  float: left;
+}
+#banggo .bottom .mbshop_bottom_guide dl dt {
+  width: auto;
+  clear: right;
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  color: #231815;
+}
+#banggo .bottom .mbshop_bottom_guide dl dd {
+  width: 200px;
+  padding-top: 13px;
+  font-size: 12px;
+}
+#banggo .bottom .mbshop_bottom_guide dl dd a {
+  color: #231815;
+}
+#banggo .bottom .mbshop_bottomCopyright {
+  overflow: hidden;
+  float: none;
+  margin: 20px auto 0;
+  width: 100%;
+  padding: 20px 0 15px;
+  border-top: 1px solid #999;
+}
+#banggo .bottom .mbshop_bottomCopyright p {
+  text-align: center;
+  color: #787878;
+  font-weight: 700;
+  font-size: 14px;
+}
+#banggo .bottom .mbshop_bottomCopyright span {
+  display: block;
+  padding-top: 15px;
+  width: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#banggo .bottom .mbshop_bottomCopyright span img {
+  float: left;
+  display: block;
+  margin-left: 10px;
+}
+#banggo .aside {
+  width: 60px;
+  height: auto;
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+#banggo .aside .topred {
+  width: 55px;
+  height: 90px;
+  float: left;
+  margin-bottom: 10px;
+  background: url(../css/img/Shouye/Veo_mbshop_spirit_pic.png) 0 -1060px no-repeat;
+}
+#banggo .aside .onlineConsultred {
+  width: 55px;
+  height: 55px;
+  float: left;
+  display: block;
+  cursor: pointer;
+  background: url(../css/img/Shouye/CD872572BA9D54B963FB60539E6DCD2D.png) no-repeat;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,775 @@
+@charset "utf-8";
+@import "common.css";
+
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    height: auto;
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+}
+
+#banggo {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+
+    .ad_common_picture {
+        background: #440c0b;
+        width: 100%;
+
+        .ad_common_picture img {
+            width: 100%;
+            height: 80px;
+        }
+    }
+
+    .header_top_line {
+        width: 100%;
+        height: 32px;
+        font-size: 12px;
+        color: #999;
+
+        .header_top_line_left {
+            float: left;
+            line-height: 32px;
+            width: 640.16px;
+        }
+
+        .header_top_line_right {
+            float: right;
+            width: 450.14px;
+            height: 30px;
+
+            li {
+                float: left;
+                width: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                position: relative;
+
+                a {
+                    font-size: 12px;
+                    color: #999999;
+                    margin-bottom: 2px;
+                }
+
+                em {
+                    width: 100%;
+                    height: 3px;
+                    background-color: #fff;
+                    bottom: 5px;
+                    position: absolute;
+                    z-index: 20;
+                    left: 0;
+                }
+
+                .mbshop_new_headtop_box {
+                    display: none;
+                    position: absolute;
+                    width: 80px;
+                    height: auto;
+                    border: 1px solid #B5B5B5;
+                    background-color: #fff;
+                    top: 30px;
+                    -moz-box-shadow: 0 0 5px #ccc;
+                    box-shadow: 0 0 5px #ccc;
+                    left: -1px;
+                    z-index: 19;
+
+                    a {
+                        float: left;
+                        display: block;
+                        width: auto;
+                        clear: left;
+                        margin-top: 5px;
+                    }
+                }
+
+                .mbshop_new_headtop_con_style_02 {
+                    width: 140px;
+                    // padding-top: 10px;
+                    padding: 5px 10px 10px;
+                }
+
+                .mbshop_box2 {
+                    width: 100%;
+                }
+
+                .new_mbshop_wxewm_box {
+                    width: 140px;
+                    height: 140px;
+                    position: absolute;
+                    z-index: 111;
+                    display: none;
+                    top: 25px;
+                    left: -12px;
+                }
+
+                >i {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background: url(../css/img/Shouye/icons.png);
+                    background-position: 15px -139px;
+                }
+
+                b {
+                    display: inline-block;
+                    width: 9px;
+                    height: 15px;
+                    background: url(../css/img/Shouye/Iphone-vertical.png);
+                    background-size: contain;
+                }
+            }
+
+            li:nth-child(1):hover {
+                border-left: 1px #B5B5B5 solid;
+                border-right: 1px #B5B5B5 solid;
+                background-position: 63px -35px;
+                -webkit-box-shadow: 0 0 5px #ccc;
+                -moz-box-shadow: 0 0 5px #ccc;
+                box-shadow: 0 0 5px #ccc;
+
+                .mbshop_new_headtop_box {
+                    display: block;
+                }
+            }
+
+            li:nth-child(3):hover {
+                border-left: 1px #B5B5B5 solid;
+                border-right: 1px #B5B5B5 solid;
+                background-position: 63px -35px;
+                -webkit-box-shadow: 0 0 5px #ccc;
+                -moz-box-shadow: 0 0 5px #ccc;
+                box-shadow: 0 0 5px #ccc;
+
+                em {
+                    bottom: 7px;
+                }
+
+                .mbshop_new_headtop_box {
+                    display: block;
+                }
+            }
+
+            li:nth-child(5):hover {
+                border-left: 1px #B5B5B5 solid;
+                border-right: 1px #B5B5B5 solid;
+                background-position: 63px -35px;
+                -webkit-box-shadow: 0 0 5px #ccc;
+                -moz-box-shadow: 0 0 5px #ccc;
+                box-shadow: 0 0 5px #ccc;
+
+                em {
+                    bottom: 7px;
+                }
+
+                .mbshop_new_headtop_box {
+                    display: block;
+                }
+            }
+
+            li:last-child:hover {
+                .new_mbshop_wxewm_box {
+                    display: block;
+                }
+            }
+
+        }
+    }
+
+    .header_top_content {
+        width: 100%;
+        height: 65px;
+        line-height: 65px;
+
+        img {
+            float: left;
+        }
+
+        .header_top_content_center {
+            width: 850px;
+            height: 53px;
+            float: left;
+            line-height: 65px;
+            // margin-top: 19px;
+
+            .inpText {
+                float: left;
+                width: 290px;
+                height: 32px;
+                line-height: 65px;
+                border: 1px #d51819 solid;
+                padding: 5px 0 5px 5px;
+                box-sizing: border-box;
+                margin-top: 19px;
+                outline: none;
+            }
+
+            .inpSearch {
+                float: left;
+                width: 80px;
+                height: 32px;
+                background: #d51819;
+                color: #fff;
+                margin-right: 8px;
+                border: none;
+                margin-top: 19px;
+                // line-height: 65px;
+            }
+
+            .headTopContent_ul {
+                float: left;
+                width: 350px;
+                margin-left: 10px;
+                height: 15px;
+                line-height: 65px;
+                font-size: 12px;
+
+                a:nth-child(3),
+                :nth-child(5),
+                :nth-child(9) {
+                    color: #d51819;
+                }
+
+                a {
+                    float: left;
+                    color: #666;
+                }
+
+                span {
+                    // 
+                    float: left;
+                    display: block;
+                    width: auto;
+                    height: auto;
+                    padding: 0 10px;
+                    color: #DCDCDC;
+                }
+            }
+
+            span {
+                line-height: 65px;
+                font-size: 14px;
+                width: 102px;
+                // display: inline-block;
+
+                // float: right;
+                i {
+                    display: inline-block;
+                    width: 33px;
+                    height: 46px;
+                    background: url(../css/img/Shouye/Veo_mbshop_spirit_pic.png);
+                    background-position: 0 -412px;
+                }
+
+                b {
+                    color: #d51819;
+                }
+            }
+        }
+    }
+
+    .header_top_classify {
+        width: 100%;
+        height: 38px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 40px;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 20px 0 0px;
+
+        .headClassify_ul1 {
+            padding: 0 17px 0 0;
+            box-sizing: border-box;
+
+            li {
+                float: left;
+                padding: 0 18px;
+                box-sizing: border-box;
+
+                // position: relative;
+                >a {
+                    color: #000;
+                }
+
+                .category_hover_wrap {
+                    background: #fff;
+                    position: absolute;
+                    z-index: 1;
+                    padding: 30px 0 30px;
+                    display: none;
+                    // opacity: 0;
+                    min-height: 360px;
+                    box-sizing: border-box;
+                    margin-left: -18px;
+                    margin-top: -2px;
+                    box-shadow: 0 0 5px #ccc;
+                    overflow: hidden;
+
+                    .category_column {
+                        float: left;
+                        width: 110px;
+                        min-height: 300px;
+                        padding: 0 25px 600px;
+                        margin-bottom: -600px;
+                        box-sizing: border-box;
+                        border-right: 1px solid #f0f0f0;
+
+                        a {
+                            display: block;
+                            font-size: 12px;
+                            color: #222;
+                            white-space: nowrap;
+                        }
+
+                        dt {
+                            margin-bottom: 20px;
+                            float: none;
+                            text-align: center;
+                            margin-left: -25px;
+                            width: 110px;
+
+                            a {
+                                font-size: 20px;
+                                color: #d22223;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .headClassify_ul2 {
+            float: right;
+
+            li {
+                height: 30px;
+                float: left;
+                padding: 0 18px;
+
+                img {
+                    width: 134px;
+                    height: 40px;
+                    margin-top: -10px;
+
+                }
+            }
+        }
+    }
+
+    //轮播图
+    .banner {
+        width: 100%;
+        height: 750px;
+
+        .banner_top {
+            width: 100%;
+            height: 600px;
+            position: relative;
+
+            // overflow: hidden;
+            img {
+                width: 1588px;
+                height: 600px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .banner_bottom {
+            height: 150px;
+
+            li {
+
+                width: 219px !important;
+                height: 110px;
+                float: left;
+                margin: 20px 0;
+                padding: 0 10px;
+                border-right: 1px solid #f0f0f0;
+                position: relative;
+
+                img {
+                    width: 220px;
+                    height: 110px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+            }
+
+            .active::before {
+                content: "";
+                bottom: -20px;
+                position: absolute;
+                left: 50%;
+                margin-left: -50px;
+                border-bottom: 3px solid #d22223;
+                width: 100px;
+            }
+
+            .active::after {
+                opacity: 0;
+            }
+
+            li::after {
+                content: "";
+                position: absolute;
+                width: 220px;
+                height: 110px;
+                background: rgba(0, 0, 0, .3);
+                z-index: 999;
+                top: 0;
+                left: 10px;
+            }
+        }
+    }
+
+    //楼层
+    .IN_plate {
+        width: 100%;
+        background-color: #f7f7f7;
+        height: 4880px;
+
+        .plate1 {
+            width: 100%;
+            height: 332px;
+
+            a {
+                float: left;
+            }
+        }
+
+        .plate2 {
+            width: 100%;
+            height: 615px;
+
+            a {
+                float: left;
+            }
+        }
+
+        .plate {
+            height: 792px;
+            width: 100%;
+
+            .img_plat3top {
+                width: 100%;
+                height: 92px;
+            }
+        }
+
+        .plate3 {
+            @extend .plate;
+        }
+
+        //应该渲染的图块
+        .a_plate3 {
+            float: left;
+
+            a {
+                position: relative;
+                float: left;
+                margin-right: 10px;
+                margin-bottom: 10px;
+
+                img {
+                    width: 230px;
+                    height: 230px;
+                    opacity: 1;
+                }
+
+                .img_plat3 {
+
+                    width: 230px;
+                    height: 61.23px;
+                    position: absolute;
+                    left: 0;
+                    top: 170px;
+                }
+
+                span {
+                    position: absolute;
+                    right: 15px;
+                    top: 211px;
+                    display: inline-block;
+                    font-size: 16px;
+                    line-height: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+
+
+                .brand {
+                    background: #fff;
+                    font-style: normal;
+                    width: 230px;
+                    display: block;
+                    font-size: 14px;
+                    color: #919191;
+                    line-height: 42px;
+
+                    label {
+                        margin-left: 70px;
+                        vertical-align: middle;
+                        width: 40px;
+                        height: 18px;
+                        border: 1px solid #f8584f;
+                        text-align: center;
+                        color: #f8584f;
+                        background: #fdedec;
+                    }
+                }
+
+
+                .plate3_tittle {
+                    background: #fff;
+                    display: block;
+                    font-style: normal;
+                    font-size: 14px;
+                    color: #222;
+                    width: 230px;
+                    height: 16px;
+                    overflow: hidden;
+                }
+
+                .plate3_price {
+                    background: #fff;
+                    height: 45px;
+                    width: 230px;
+                    display: block;
+                    line-height: 45px;
+
+                    b {
+                        font-size: 14px;
+                        color: #f8584f;
+                        display: inline-block;
+                        margin-right: 5px;
+                        font-weight: 800;
+                        font-style: normal;
+                    }
+
+                    del {
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-size: 12px;
+                        color: #919191;
+                    }
+                }
+
+            }
+        }
+
+        .plate4 {
+            @extend .plate;
+        }
+
+        .imgRight {
+            float: right;
+        }
+
+        .plate4_top {
+            img {
+                float: left;
+            }
+        }
+
+        .plate4_bottom {
+            img {
+                float: left;
+            }
+        }
+
+        .plate5_nz {
+            @extend .plate;
+        }
+
+        .plate5_img {
+            margin-bottom: 20px;
+        }
+
+        .plate6 {
+            @extend .plate;
+        }
+
+        .plate7 {
+            @extend .plate;
+        }
+
+    }
+
+    .IN_plate a img:hover {
+        opacity: 0.65;
+    }
+
+    .plateImg:hover {
+        opacity: 0.65;
+    }
+
+    //底部广告公共部分
+    .adbottom_common {
+        height: 293px;
+
+        .ad_common_share {
+            // border-collapse: collapse;
+            width: 1200px;
+            height: 240px;
+            margin: 53px auto 0;
+            position: relative;
+            float: none;
+            clear: both;
+
+            >li {
+                float: left;
+                height: 238px;
+                border: 1px solid #dcdcdc;
+                margin-right: -1px;
+                background-color: #fafafa;
+
+                .ad_right {
+                    display: flex;
+
+                    li {
+                        background-image: url(../css/img/Shouye/indexline.png);
+                        background-position: right center;
+                        background-repeat: no-repeat;
+                        flex: 1;
+                        text-align: center;
+
+                        img {
+                            margin: 14px auto 8px;
+                        }
+
+                        p {
+                            font-weight: 700;
+                            line-height: 16px;
+                            font-size: 12px;
+                            color: #999;
+                            font-style: normal;
+                        }
+                    }
+
+                    li:nth-child(3) {
+                        background-image: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        background: url(../css/img/Shouye/mbshop_bottom_guide.png) repeat-x;
+        width: 100%;
+
+        .mbshop_bottom_guide {
+            margin: 0 auto;
+
+            dl {
+                width: 200px;
+                height: auto;
+                float: left;
+
+                dt {
+                    width: auto;
+                    clear: right;
+                    font-weight: 700;
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                    margin-bottom: 5px;
+                    color: #231815;
+                }
+
+                dd {
+                    width: 200px;
+                    padding-top: 13px;
+                    font-size: 12px;
+
+                    a {
+                        color: #231815;
+                    }
+                }
+            }
+        }
+
+        .mbshop_bottomCopyright {
+            overflow: hidden;
+            float: none;
+            margin: 20px auto 0;
+            width: 100%;
+            padding: 20px 0 15px;
+            border-top: 1px solid #999;
+
+            p {
+                text-align: center;
+                color: #787878;
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            span {
+                display: block;
+                padding-top: 15px;
+                width: 400px;
+                overflow: hidden;
+                margin: 0 auto;
+
+                img {
+                    float: left;
+                    display: block;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .aside {
+        width: 60px;
+        height: auto;
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 30px;
+
+        .topred {
+            width: 55px;
+            height: 90px;
+            float: left;
+            // opacity: 1;
+            // display: none;
+            margin-bottom: 10px;
+            background: url(../css/img/Shouye/Veo_mbshop_spirit_pic.png) 0 -1060px no-repeat;
+        }
+
+        .onlineConsultred {
+            width: 55px;
+            height: 55px;
+            float: left;
+            display: block;
+            cursor: pointer;
+            background: url(../css/img/Shouye/CD872572BA9D54B963FB60539E6DCD2D.png) no-repeat;
+        }
+    }
+}
